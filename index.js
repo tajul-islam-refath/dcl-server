@@ -37,14 +37,6 @@ app.get("*", function (req, res) {
   res.status(404).json({ msg: "Not Found" });
 });
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static(path.join(__dirname, "../client/build")));
-
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, "../client/build/index.html"));
-//   });
-// }
-
 const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ltldm.mongodb.net/dcl?retryWrites=true&w=majority`;
 const port = process.env.PORT || 5050;
 
