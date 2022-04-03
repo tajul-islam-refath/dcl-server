@@ -30,7 +30,7 @@ app.use("/about", aboutRoute);
 app.use("/service", serviceRoute);
 
 app.get("/", function (req, res) {
-  res.redirect("https://dcl-mern-app.herokuapp.com");
+  res.redirect("https://darling-torte-fa110e.netlify.app");
 });
 
 app.get("*", function (req, res) {
