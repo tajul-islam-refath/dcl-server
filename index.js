@@ -30,7 +30,7 @@ app.use("/about", aboutRoute);
 app.use("/service", serviceRoute);
 
 app.get("/", function (req, res) {
-  res.status(200).json({ success: "get success" });
+  res.redirect("https://dcl-mern-app.herokuapp.com");
 });
 
 app.get("*", function (req, res) {
